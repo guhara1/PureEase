@@ -189,6 +189,114 @@
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>명동역 역세권 예약 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/station/euljiro-1ga-station/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>을지로입구역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/gyodae-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>교대역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/gosokteomineol-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>고속터미널역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/yangjae-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>양재역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/cheongdam-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>청담역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/nonhyeon-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>논현역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/sinsa-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>신사역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/hanti-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>한티역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/garaksijang-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>가락시장역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/bangi-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>방이역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/cheonho-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>천호역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/gangdong-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>강동역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/gildong-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>길동역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/godeok-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>고덕역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/mapo-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>마포역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/sinchon-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>신촌역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/idae-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>이대역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/hongje-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>홍제역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/chungjeongro-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>충정로역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/bulgwang-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>불광역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/gupabal-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>구파발역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/guro-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>구로역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/doksan-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>독산역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/geumcheongucheong-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>금천구청역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/hwagok-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>화곡역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/gimpogonghang-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>김포공항역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/sinjeongnegeori-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>신정네거리역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/nakseongdae-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>낙성대역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/noryangjin-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>노량진역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/heukseok-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>흑석역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/isu-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>이수역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/seoulsup-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>서울숲역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/guui-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>구의역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/achasan-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>아차산역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/dongdaemun-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>동대문역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/cheongryangri-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>청량리역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/hoegi-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>회기역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/janghanpyeong-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>장한평역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/myeonmok-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>면목역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/mangu-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>망우역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/changdong-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>창동역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/ssangmun-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>쌍문역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/dobongsan-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>도봉산역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/suyu-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>수유역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/mia-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>미아역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/miasageori-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>미아사거리역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/seongsinyeodaeipgu-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>성신여대입구역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/gileum-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>길음역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/anam-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>안암역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/hyehwa-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>혜화역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/sukdaeipgu-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>숙대입구역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/hangangjin-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>한강진역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/sanggye-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>상계역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/euljiro3ga-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>을지로3가역 역세권 예약 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/station/chungmuro-station/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-station.png</image:loc><image:title>충무로역 역세권 예약 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/gangnam-gu/yeoksam-dong/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>역삼동 강남구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/gangnam-gu/gaepodong/</loc><lastmod>2026-06-29</lastmod>

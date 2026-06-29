@@ -50,7 +50,8 @@ _STATION_BY_NAME = {s["name"]: s for s in STATIONS}
 def _life_link(name):
     l = _LIFE_BY_NAME.get(name)
     if l:
-        return f'<a href="{life_url(l["slug"])}">{name}</a>'
+        href = l.get("link") or life_url(l["slug"])
+        return f'<a href="{href}">{name}</a>'
     return name
 
 

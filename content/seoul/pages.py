@@ -234,7 +234,7 @@ def _station_page(s):
 {R.faq_block(R.region_faqs(name + ' 인근'))}
 {R.who_how_why()}
 {R.byline_block()}
-{R.related_block(name + ' 관련 지역 보기', ([(gu, R.gu_url(name2slug[gu]))] if gu in name2slug else []) + ([(s['life'] + ' 생활권', R.life_url(R._LIFE_BY_NAME[s['life']]['slug']))] if s['life'] in R._LIFE_BY_NAME else []) + [('역세권 이용', R.use_url('station-area')), ('호텔·숙소 이용', R.use_url('hotel'))])}
+{R.related_block(name + ' 관련 지역 보기', ([(gu, R.gu_url(name2slug[gu]))] if gu in name2slug else []) + ([(s['life'] + ' 생활권', R._LIFE_BY_NAME[s['life']].get('link') or R.life_url(R._LIFE_BY_NAME[s['life']]['slug']))] if s['life'] in R._LIFE_BY_NAME else []) + [('역세권 이용', R.use_url('station-area')), ('호텔·숙소 이용', R.use_url('hotel'))])}
 {_cta()}
 """
     desc = _clip(f"{name} 출장마사지 역세권 안내입니다. 가까운 생활권과 이용 장소, 예약 전 확인사항을 정리했습니다.")
