@@ -26,7 +26,7 @@ from content.site import (AUTHORITY_LINKS, BASE_URL, BRAND, COMPANY, NAV,
 ROOT = os.path.dirname(os.path.abspath(__file__))
 MIN_INDEX_CHARS = 2000
 # 모든 페이지에 공통으로 노출하는 대표 이미지(사용자가 교체). 메인은 히어로 옆에 표시.
-HERO_IMAGE = "/assets/hero.png"
+HERO_IMAGE = "/assets/hero.jpg"
 
 
 def text_length(body_html: str) -> int:

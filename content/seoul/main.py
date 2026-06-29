@@ -61,7 +61,7 @@ _HERO = f"""<section class="hero">
       </ul>
     </div>
     <div class="hero-media">
-      <img class="hero-image" src="/assets/hero.png" alt="서울 전역 생활권 방문 관리 안내 이미지"
+      <img class="hero-image" src="/assets/hero.jpg" alt="서울 전역 생활권 방문 관리 안내 이미지"
            loading="eager" decoding="async" fetchpriority="high">
     </div>
   </div>
