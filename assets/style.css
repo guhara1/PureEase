@@ -419,7 +419,18 @@ strong { color: var(--gold-soft); font-weight: 700; }
 .cta .cta-phone:hover { filter: brightness(1.07); color: #120e06; }
 
 /* 요금 카드 */
-.pricing-lead { color: var(--text-dim); }
+.pricing { text-align: center; }
+.pricing-badge {
+  display: inline-block; margin: 0 0 12px; padding: 6px 16px;
+  border: 1px solid var(--line-gold); border-radius: 20px;
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; color: var(--gold);
+}
+.pricing { counter-increment: none; }
+.pricing h2::before { content: none; }
+.pricing h2::after { margin-left: auto; margin-right: auto; }
+.pricing-lead { color: var(--text-dim); max-width: 640px; margin: 6px auto 0; }
+.price-grid { text-align: left; }
+.price-note { text-align: center; }
 .price-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 16px; margin: 24px 0 18px; align-items: stretch;

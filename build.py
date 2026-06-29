@@ -19,6 +19,7 @@ from datetime import date
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from content import PAGES
+from content.pricing import PRICING
 from content.site import (AUTHORITY_LINKS, BASE_URL, BRAND, COMPANY, NAV,
                           PHONE, PHONE_DISPLAY, TELEGRAM_MAKE,
                           TELEGRAM_PARTNER)
@@ -251,6 +252,10 @@ def render_page(page: dict) -> str:
         )
 
     body, toc_items = inject_toc(body)
+    # 코스별 기본 요금표 — 메인 포함 전 페이지 노출(이미 포함된 페이지는 중복 방지).
+    # text_length 가 pricing 섹션을 제외하므로 색인 글자수 판정에는 영향 없음.
+    if 'class="pricing"' not in body:
+        body += PRICING
     toc_html = render_toc(toc_items)
     layout_cls = "page-layout has-toc" if toc_html else "page-layout"
 
