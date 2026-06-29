@@ -130,4 +130,6 @@ PAGE = {
     "extra_head": R.faq_jsonld(R.region_faqs('서울 전역', '강남·잠실·홍대 같은 주요 지역도 가능한가요?', '주요 생활권과 역세권은 각 구·생활권·역세권 페이지에서 안내합니다. 정확한 가능 여부는 예약 시 도로명 주소를 기준으로 확인합니다.')),
     "breadcrumb": [],
     "hero": _HERO,
+    "image": "/assets/cover-main.png",
+    "image_alt": "서울 생활권 방문 안내 이미지",
 }

@@ -492,7 +492,40 @@ def build_pages():
     pages += _check_pages()
     pages += _policy_pages()
     pages.append(_contact_page())
+    _attach_images(pages)
     return pages
+
+
+def _attach_images(pages):
+    """경로 유형별 대표 이미지(og + schema + 본문)와 자연스러운 alt 를 부여한다."""
+    import re as _re
+    for p in pages:
+        path = p["path"]
+        if path.startswith("area/"):
+            img = "cover-area"
+        elif path.startswith("life/"):
+            img = "cover-life"
+        elif path.startswith("station/"):
+            img = "cover-station"
+        elif path.startswith("use/"):
+            img = "cover-use"
+        elif path.startswith("check/"):
+            img = "cover-check"
+        elif path.startswith("policy/"):
+            img = "cover-policy"
+        elif path == "contact/":
+            img = "cover-main"
+        elif path.count("/") == 2:   # 행정동
+            img = "cover-dong"
+        else:                         # 구
+            img = "cover-district"
+        # alt 은 "출장마사지" 반복 없이 자연스럽게 구성
+        label = _re.sub(r"출장마사지", "", p["h1"])
+        label = _re.sub(r"\s*·\s*", " ", label)
+        label = _re.sub(r"\s+", " ", label).strip()
+        suffix = " 이미지" if label.endswith("안내") else " 안내 이미지"
+        p["image"] = f"/assets/{img}.png"
+        p["image_alt"] = f"{label}{suffix}"
 
 
 PAGES = build_pages()

@@ -14,6 +14,7 @@ import os
 import re
 import shutil
 import sys
+from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -115,7 +116,7 @@ def build_schema(page: dict, canonical: str, crumbs) -> str:
     - 실제 후기 데이터가 없으므로 Review·AggregateRating 도 쓰지 않는다.
     """
     base = BASE_URL.rstrip("/")
-    og_image = f"{base}/assets/og-image.png"
+    og_image = base + (page.get("image") or "/assets/og-image.png")
 
     org = {
         "@type": "Organization",
@@ -235,6 +236,16 @@ def render_page(page: dict) -> str:
         for label, url in AUTHORITY_LINKS
     )
 
+    # 대표 이미지(히어로가 없는 페이지에 한해 본문 상단에 노출)
+    cover_html = ""
+    if page.get("image") and not hero:
+        cover_html = (
+            f'<figure class="page-cover">'
+            f'<img src="{page["image"]}" alt="{page.get("image_alt", BRAND)}" '
+            f'width="1200" height="630" loading="lazy" decoding="async">'
+            f"</figure>"
+        )
+
     body, toc_items = inject_toc(body)
     toc_html = render_toc(toc_items)
     layout_cls = "page-layout has-toc" if toc_html else "page-layout"
@@ -253,11 +264,12 @@ def render_page(page: dict) -> str:
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:site_name" content="{BRAND}">
-<meta property="og:image" content="{BASE_URL.rstrip('/')}/assets/og-image.png">
+<meta property="og:image" content="{BASE_URL.rstrip('/')}{page.get('image') or '/assets/og-image.png'}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{page.get('image_alt', BRAND)}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{BASE_URL.rstrip('/')}/assets/og-image.png">
+<meta name="twitter:image" content="{BASE_URL.rstrip('/')}{page.get('image') or '/assets/og-image.png'}">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -289,6 +301,7 @@ def render_page(page: dict) -> str:
     <article class="page-content">
       {render_breadcrumb(crumbs)}
       {h1_html}
+      {cover_html}
       {body}
     </article>
   </div>
@@ -383,17 +396,32 @@ def build() -> None:
         chars = text_length(page["body"])
         noindex = page.get("noindex", False) or chars < MIN_INDEX_CHARS
         if not noindex:
-            sitemap_urls.append(BASE_URL.rstrip("/") + "/" + path)
+            loc = BASE_URL.rstrip("/") + "/" + path
+            img = page.get("image")
+            sitemap_urls.append((loc, img, page.get("image_alt", "")))
         report.append((path or "/", chars, "noindex" if noindex else "index"))
 
-    # sitemap.xml
-    urls = "\n".join(
-        f"  <url><loc>{u}</loc></url>" for u in sitemap_urls
-    )
+    # sitemap.xml (lastmod + 이미지 sitemap 포함)
+    base = BASE_URL.rstrip("/")
+    lastmod = date.today().isoformat()
+    blocks = []
+    for loc, img, alt in sitemap_urls:
+        img_xml = ""
+        if img:
+            img_alt = html.escape(alt, quote=True)
+            img_xml = (
+                f"\n    <image:image><image:loc>{base}{img}</image:loc>"
+                f"<image:title>{img_alt}</image:title></image:image>"
+            )
+        blocks.append(
+            f"  <url><loc>{loc}</loc><lastmod>{lastmod}</lastmod>{img_xml}</url>"
+        )
+    urls = "\n".join(blocks)
     with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(
             '<?xml version="1.0" encoding="UTF-8"?>\n'
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+            '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
             f"{urls}\n</urlset>\n"
         )
 
