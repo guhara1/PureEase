@@ -131,7 +131,7 @@ def build_schema(page: dict, canonical: str, crumbs) -> str:
             "height": 512,
         },
         "telephone": PHONE,
-        "areaServed": {"@type": "AdministrativeArea", "name": "서울특별시 노원구"},
+        "areaServed": {"@type": "City", "name": "서울특별시"},
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": PHONE,
@@ -273,8 +273,8 @@ def render_page(page: dict) -> str:
   <div class="header-accent" aria-hidden="true"></div>
   <div class="header-top">
     <div class="header-inner">
-      <a class="brand" href="/"><span class="brand-mark">N</span> <span class="brand-text">{BRAND}</span></a>
-      <p class="header-tagline"><span class="tag-gem">◆</span> 노원구 전지역 방문 관리 <span class="tag-gem">◆</span> 24시간 상담</p>
+      <a class="brand" href="/"><span class="brand-mark">간</span> <span class="brand-text">{BRAND}</span></a>
+      <p class="header-tagline"><span class="tag-gem">◆</span> 서울 전역 생활권 방문 안내 <span class="tag-gem">◆</span> 24시간 상담</p>
       <a class="header-call" href="tel:{PHONE}"><span class="call-label">예약전화</span> {PHONE_DISPLAY}</a>
       <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
@@ -297,12 +297,12 @@ def render_page(page: dict) -> str:
   <div class="container footer-grid">
     <div class="footer-col footer-about">
       <p class="footer-brand">{BRAND}</p>
-      <p class="footer-desc">노원구 전지역 방문 출장마사지·홈타이 안내 사이트입니다. 모든 서비스는 안내된 관리 범위와 위생·안전 기준 안에서만 제공됩니다.</p>
+      <p class="footer-desc">서울 전역 생활권 방문 출장마사지·홈타이 안내 사이트입니다. 25개 구와 주요 생활권·역세권·이용 장소별 예약 전 확인사항을 안내하며, 모든 서비스는 안내된 관리 범위와 위생·안전 기준 안에서만 제공됩니다.</p>
       <address class="footer-contact">
         <span class="footer-contact-row"><span class="footer-label">상호</span> {COMPANY}</span>
         <span class="footer-contact-row"><span class="footer-label">예약전화</span> <a href="tel:{PHONE}">{PHONE_DISPLAY}</a></span>
         <span class="footer-contact-row"><span class="footer-label">상담시간</span> 연중무휴 24시간</span>
-        <span class="footer-contact-row"><span class="footer-label">서비스 지역</span> 서울특별시 노원구 전지역</span>
+        <span class="footer-contact-row"><span class="footer-label">서비스 지역</span> 서울특별시 전역</span>
       </address>
       <div class="footer-cta">
         <a class="footer-cta-btn" href="{TELEGRAM_MAKE}" target="_blank" rel="noopener nofollow">
@@ -313,35 +313,34 @@ def render_page(page: dict) -> str:
         </a>
       </div>
     </div>
-    <nav class="footer-col" aria-label="서비스 안내">
-      <p class="footer-title">서비스</p>
+    <nav class="footer-col" aria-label="지역 안내">
+      <p class="footer-title">지역 안내</p>
       <ul>
-        <li><a href="/massage/">노원 출장마사지</a></li>
-        <li><a href="/nowon-gu/">지역별 안내</a></li>
-        <li><a href="/nowon-gu/stations/">지하철역별 안내</a></li>
-        <li><a href="/themes/">테마별 안내</a></li>
-        <li><a href="/courses/">코스안내</a></li>
+        <li><a href="/#areas">권역 안내</a></li>
+        <li><a href="/#districts">구별 안내</a></li>
+        <li><a href="/#life">생활권 안내</a></li>
+        <li><a href="/use/station-area/">역세권 이용</a></li>
+        <li><a href="/nowon-gu/">노원구 안내</a></li>
       </ul>
     </nav>
     <nav class="footer-col" aria-label="이용 안내">
       <p class="footer-title">이용 안내</p>
       <ul>
-        <li><a href="/reservation/">예약안내</a></li>
-        <li><a href="/guide/">이용가이드</a></li>
-        <li><a href="/reviews/">이용 후기</a></li>
-        <li><a href="/support/">고객센터</a></li>
-        <li><a href="/support/#faq">자주 묻는 질문</a></li>
+        <li><a href="/use/home/">자택 이용</a></li>
+        <li><a href="/use/hotel/">호텔·숙소 이용</a></li>
+        <li><a href="/use/officetel/">오피스텔 이용</a></li>
+        <li><a href="/check/address/">예약 전 확인</a></li>
+        <li><a href="/check/time/">예약 가능 시간</a></li>
       </ul>
     </nav>
     <nav class="footer-col" aria-label="정책 및 기준">
-      <p class="footer-title">정책</p>
+      <p class="footer-title">운영 기준</p>
       <ul>
-        <li><a href="/about/">운영자 소개</a></li>
-        <li><a href="/support/privacy/">개인정보처리방침</a></li>
-        <li><a href="/support/terms/">이용약관</a></li>
-        <li><a href="/guide/#hygiene">위생·안전 기준</a></li>
-        <li><a href="/guide/#prohibited">금지행위 안내</a></li>
-        <li><a href="/support/#biz">제휴·기업 문의</a></li>
+        <li><a href="/policy/authors/">작성자·검수자 안내</a></li>
+        <li><a href="/policy/privacy/">개인정보 처리방침</a></li>
+        <li><a href="/policy/service-standard/">서비스 이용 기준</a></li>
+        <li><a href="/policy/no-illegal/">불법·선정적 서비스 불가 안내</a></li>
+        <li><a href="/policy/content-standard/">콘텐츠 작성 기준</a></li>
       </ul>
     </nav>
   </div>

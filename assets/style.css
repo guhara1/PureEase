@@ -762,3 +762,17 @@ th { background: var(--panel-2); color: var(--gold-soft); font-family: var(--ser
   .footer-cta { margin-top: 16px; }
   .footer-refs-inner { padding: 12px 24px; gap: 6px 14px; }
 }
+
+/* 권역 카드 — 제목/부제 분리 */
+.area-cards a { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; }
+.area-cards strong { color: var(--gold-soft); font-size: 0.98rem; line-height: 1.4; }
+.area-cards span { font-size: 0.78rem; color: var(--text-dim); letter-spacing: 0.02em; }
+
+/* 체크리스트 */
+.checklist { list-style: none; margin: 4px 0 0; padding: 0; }
+.checklist li { position: relative; padding: 6px 0 6px 26px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.checklist li::before { content: "✓"; position: absolute; left: 4px; top: 6px; color: var(--gold); font-weight: 700; }
+
+/* 작성·검수 정보 박스 */
+.byline { background: rgba(255,255,255,0.015); }
+.byline p { font-size: 0.88rem; }
