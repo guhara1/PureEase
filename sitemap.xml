@@ -457,8 +457,12 @@
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-check.png</image:loc><image:title>서울 고객 유의사항 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/policy/service-standard/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-policy.png</image:loc><image:title>서울 서비스 이용 기준 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/policy/no-illegal/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-policy.png</image:loc><image:title>불법 선정적 서비스 불가 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/policy/content-standard/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-policy.png</image:loc><image:title>콘텐츠 작성 기준 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/policy/authors/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-policy.png</image:loc><image:title>작성자 검수자 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/policy/privacy/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-policy.png</image:loc><image:title>개인정보 처리방침 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/nowon-gu/</loc><lastmod>2026-06-29</lastmod></url>
