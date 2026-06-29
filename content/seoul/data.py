@@ -1079,3 +1079,45 @@ for _gu, _d in DISTRICTS.items():
         if _k in _seen2:
             raise ValueError(f"슬러그 충돌: {_gu} {_x} vs {_seen2[_k]}")
         _seen2[_k] = _x
+
+# ── 누락된 실제 주거 법정동 보강 + 정확도 보정 ───────────
+_EXTRA_FILL = {
+    "mapo-gu": {
+        "신공덕동": "공덕 인근 도심 주거 생활권입니다.",
+        "토정동": "마포 한강변 주거지입니다.",
+        "구수동": "마포 한강변 주거 생활권입니다.",
+        "하중동": "마포 한강변 소규모 주거지입니다.",
+        "당인동": "합정·상수 인근 한강변 주거지입니다.",
+    },
+    "yongsan-gu": {
+        "서계동": "서울역 서편 언덕 주거 생활권입니다.",
+        "청암동": "원효로 인근 한강변 주거지입니다.",
+        "신계동": "원효로 인근 재개발 주거 생활권입니다.",
+        "산천동": "용산 한강변 주거지입니다.",
+    },
+    "seodaemun-gu": {
+        "봉원동": "안산 자락 연세대 인근 주거지입니다.",
+        "옥천동": "서대문 도심 인접 소규모 주거지입니다.",
+        "안산동": "안산 자락 주거 생활권입니다.",
+    },
+}
+for _gu, _dct in _EXTRA_FILL.items():
+    DISTRICTS[_gu]["dongs"] += list(_dct.keys())
+    DONG_NOTES.update(_dct)
+
+# 성동구: 왕십리동(비법정) → 상왕십리동·하왕십리동으로 보정
+if "왕십리동" in DISTRICTS["seongdong-gu"]["dongs"]:
+    DISTRICTS["seongdong-gu"]["dongs"].remove("왕십리동")
+    DISTRICTS["seongdong-gu"]["dongs"] += ["상왕십리동", "하왕십리동"]
+    DONG_NOTES.update({
+        "상왕십리동": "왕십리 환승 상권 인접 도심 주거 생활권입니다.",
+        "하왕십리동": "왕십리 상권과 신축 주거가 어우러진 생활권입니다.",
+    })
+
+# 슬러그 충돌 최종 검사
+_seen3 = {}
+for _gu, _d in DISTRICTS.items():
+    for _x in _d["dongs"]:
+        _k = (_gu, slug_for(_x))
+        assert _k not in _seen3, f"슬러그 충돌 {_gu} {_x}"
+        _seen3[_k] = _x

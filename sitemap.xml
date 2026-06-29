@@ -431,6 +431,16 @@
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>현석동 마포구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/mapo-gu/jungdong/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>중동 마포구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/singongdeokdong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>신공덕동 마포구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/tojeongdong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>토정동 마포구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/gusudong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>구수동 마포구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/hajungdong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>하중동 마포구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/dangindong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>당인동 마포구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/sinchondong/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>신촌동 서대문구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/changcheon-dong/</loc><lastmod>2026-06-29</lastmod>
@@ -465,6 +475,12 @@
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>미근동 서대문구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/hapdong/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>합동 서대문구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/bongwondong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>봉원동 서대문구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/okcheondong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>옥천동 서대문구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/ansandong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>안산동 서대문구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/eunpyeong-gu/nokbeon-dong/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>녹번동 은평구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/eunpyeong-gu/bulgwang-dong/</loc><lastmod>2026-06-29</lastmod>
@@ -599,12 +615,14 @@
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>송정동 성동구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/seongdong-gu/yongdapdong/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>용답동 성동구 방문 안내 이미지</image:title></image:image></url>
-  <url><loc>https://www.seoul-ganda.example.com/seongdong-gu/wangsipridong/</loc><lastmod>2026-06-29</lastmod>
-    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>왕십리동 성동구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/seongdong-gu/doseondong/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>도선동 성동구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/seongdong-gu/hongikdong/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>홍익동 성동구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongdong-gu/sangwangsipridong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>상왕십리동 성동구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongdong-gu/hawangsipridong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>하왕십리동 성동구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/gwangjin-gu/junggokdong/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>중곡동 광진구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/gwangjin-gu/neungdong/</loc><lastmod>2026-06-29</lastmod>
@@ -919,6 +937,14 @@
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>도원동 용산구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/yongsan-gu/munbaedong/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>문배동 용산구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/yongsan-gu/seogyedong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>서계동 용산구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/yongsan-gu/cheongamdong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>청암동 용산구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/yongsan-gu/singyedong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>신계동 용산구 방문 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/yongsan-gu/sancheondong/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-dong.png</image:loc><image:title>산천동 용산구 방문 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/use/home/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-use.png</image:loc><image:title>서울 자택 이용 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/use/hotel/</loc><lastmod>2026-06-29</lastmod>
