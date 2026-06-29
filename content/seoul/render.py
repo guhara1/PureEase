@@ -10,7 +10,7 @@ import html as _html
 import json
 
 from .data import (AUTHOR, CHECKS, DISTRICTS, LIFE_AREAS, NOWON_URL, POLICIES,
-                   REVIEWER, ROMAJA, STATIONS, USE_CASES)
+                   REVIEWER, ROMAJA, STATIONS, USE_CASES, slug_for)
 
 # ── URL 헬퍼 ─────────────────────────────────────────────
 def gu_url(slug):
@@ -40,7 +40,7 @@ def policy_url(slug):
     return f"/policy/{slug}/"
 
 def dong_url(gu_slug, dong_name):
-    return f"/{gu_slug}/{ROMAJA[dong_name]}/"
+    return f"/{gu_slug}/{slug_for(dong_name)}/"
 
 # 이름 → 슬러그 역참조
 _LIFE_BY_NAME = {l["name"]: l for l in LIFE_AREAS}

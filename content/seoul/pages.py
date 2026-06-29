@@ -297,13 +297,16 @@ def _dong_pages():
 """
             desc = _clip(f"{gu} {dong} 출장마사지·홈타이 안내입니다. 가까운 생활권과 역, 이용 장소별 예약 전 확인사항을 정리했습니다.")
             pages.append({
-                "path": f"{gu_slug}/{R.ROMAJA[dong]}/",
+                "path": f"{gu_slug}/{R.slug_for(dong)}/",
                 "title": f"{dong} 출장마사지 | {gu} 방문 예약 안내",
                 "desc": desc,
                 "h1": f"{dong} 출장마사지 · {gu} 방문 안내",
                 "body": body,
                 "extra_head": R.faq_jsonld(R.region_faqs(dong)),
                 "breadcrumb": [(gu, R.gu_url(gu_slug)), (dong, "")],
+                # 고유 설명(DONG_NOTES)이 있는 동만 색인. 나머지는 생성·링크만 하고
+                # 중복 본문 위험을 피하기 위해 noindex(단계적 색인, 지시서 23항).
+                "noindex": dong not in DONG_NOTES,
             })
     return pages
 
