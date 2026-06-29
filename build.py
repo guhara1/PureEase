@@ -358,6 +358,7 @@ def render_page(page: dict) -> str:
         <li><a href="/policy/service-standard/">서비스 이용 기준</a></li>
         <li><a href="/policy/no-illegal/">불법·선정적 서비스 불가 안내</a></li>
         <li><a href="/policy/content-standard/">콘텐츠 작성 기준</a></li>
+        <li><a href="/sitemap-page/">사이트맵</a></li>
       </ul>
     </nav>
   </div>

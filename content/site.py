@@ -38,7 +38,7 @@ _life_sub = [(_l["name"], _l.get("link") or f"/life/{_l['slug']}/") for _l in LI
 _station_sub = [(_s["name"], _s.get("link") or f"/station/{_s['slug']}/") for _s in STATIONS]
 _use_sub = [(_u["name"], f"/use/{_u['slug']}/") for _u in USE_CASES]
 _check_sub = [(_c["name"], f"/check/{_c['slug']}/") for _c in CHECKS]
-_policy_sub = [(_p["name"], f"/policy/{_p['slug']}/") for _p in POLICIES] + [("문의하기", "/contact/")]
+_policy_sub = [(_p["name"], f"/policy/{_p['slug']}/") for _p in POLICIES] + [("사이트맵", "/sitemap-page/"), ("문의하기", "/contact/")]
 
 NAV = [
     ("서울 홈", "/", []),

@@ -476,6 +476,49 @@ def _contact_page():
     }
 
 
+# ── HTML 사이트맵 (내부링크 허브) ────────────────────────
+def _sitemap_page():
+    name2slug = {v["name"]: k for k, v in DISTRICTS.items()}
+
+    def grid(links):
+        return '<ul class="card-grid">' + "".join(
+            f'<li><a href="{href}">{label}</a></li>' for label, href in links
+        ) + "</ul>"
+
+    gu_links = [(R.gu_name(s), R.gu_url(s)) for a in AREAS for s in a["districts"]]
+    seen = set(); gu_links = [(n, h) for n, h in gu_links if not (h in seen or seen.add(h))]
+    area_links = [(a["name"], R.area_url(a["slug"])) for a in AREAS]
+    life_links = [(l["name"], l.get("link") or R.life_url(l["slug"])) for l in LIFE_AREAS]
+    st_links = [(s["name"], s.get("link") or R.station_url(s["slug"])) for s in STATIONS]
+    use_links = [(u["name"], R.use_url(u["slug"])) for u in USE_CASES]
+    check_links = [(c["name"], R.check_url(c["slug"])) for c in CHECKS]
+    policy_links = [(p["name"], R.policy_url(p["slug"])) for p in POLICIES] + [("문의하기", "/contact/")]
+
+    body = f"""
+<p class="lead">간다GO 서울 출장마사지 사이트의 전체 페이지를 한곳에 모았습니다. 권역·구·생활권·지하철역·이용 장소·예약 전 확인·운영 기준 순으로 원하는 안내를 빠르게 찾을 수 있습니다.</p>
+
+<section><h2>권역 안내</h2>{grid(area_links)}</section>
+<section><h2>구별 안내 (25개 구)</h2>{grid(gu_links)}</section>
+<section><h2>생활권 안내</h2>{grid(life_links)}</section>
+<section><h2>지하철역 안내</h2>{grid(st_links)}</section>
+<section><h2>이용 장소</h2>{grid(use_links)}</section>
+<section><h2>예약 전 확인</h2>{grid(check_links)}</section>
+<section><h2>운영 기준</h2>{grid(policy_links)}</section>
+<section><h2>행정동 안내</h2><p>각 구 페이지에서 소속 대표 행정동(법정동) 전체로 연결됩니다. 예를 들어 <a href="{R.gu_url('gangnam-gu')}">강남구</a>는 역삼동·청담동·대치동 등으로, <a href="{R.gu_url('songpa-gu')}">송파구</a>는 잠실동·문정동·방이동 등으로 이어집니다. 구별 안내에서 원하는 동을 선택하세요.</p></section>
+{R.who_how_why()}
+{R.byline_block()}
+{_cta()}
+"""
+    return {
+        "path": "sitemap-page/",
+        "title": "사이트맵 | 간다GO 서울 출장마사지",
+        "desc": "간다GO 서울 출장마사지 전체 페이지 안내입니다. 권역·구·생활권·역세권·이용 장소를 한눈에 찾으세요.",
+        "h1": "사이트맵 · 전체 안내",
+        "body": body,
+        "breadcrumb": [("사이트맵", "")],
+    }
+
+
 # ── 전체 PAGES 조립 ──────────────────────────────────────
 def build_pages():
     pages = []
@@ -496,6 +539,7 @@ def build_pages():
     pages += _check_pages()
     pages += _policy_pages()
     pages.append(_contact_page())
+    pages.append(_sitemap_page())
     _attach_images(pages)
     return pages
 
