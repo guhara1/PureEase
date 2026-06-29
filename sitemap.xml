@@ -959,6 +959,16 @@
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-policy.png</image:loc><image:title>작성자 검수자 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/policy/privacy/</loc><lastmod>2026-06-29</lastmod>
     <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-policy.png</image:loc><image:title>개인정보 처리방침 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/column/first-guide/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-main.png</image:loc><image:title>서울 출장마사지 처음 이용 가이드 · 예약부터 방문까지 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/column/place-compare/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-main.png</image:loc><image:title>자택·호텔·오피스텔 방문, 무엇이 다를까 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/column/lifearea-guide/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-main.png</image:loc><image:title>업무지구·주거지·숙소, 생활권별 이용 차이 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/column/building-access/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-main.png</image:loc><image:title>예약 전 건물 출입 방식 체크 가이드 안내 이미지</image:title></image:image></url>
+  <url><loc>https://www.seoul-ganda.example.com/column/safe-service/</loc><lastmod>2026-06-29</lastmod>
+    <image:image><image:loc>https://www.seoul-ganda.example.com/assets/cover-main.png</image:loc><image:title>안전하고 건전한 방문 관리 기준 안내 이미지</image:title></image:image></url>
   <url><loc>https://www.seoul-ganda.example.com/nowon-gu/</loc><lastmod>2026-06-29</lastmod></url>
   <url><loc>https://www.seoul-ganda.example.com/nowon-gu/wolgye-dong/</loc><lastmod>2026-06-29</lastmod></url>
   <url><loc>https://www.seoul-ganda.example.com/nowon-gu/gongneung-dong/</loc><lastmod>2026-06-29</lastmod></url>

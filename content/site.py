@@ -48,6 +48,14 @@ NAV = [
     ("지하철역", "/#life", _station_sub),
     ("이용 장소", "/#use", _use_sub),
     ("예약 전 확인", "/#check", _check_sub),
+    ("가이드", "/column/", [
+        ("가이드 전체", "/column/"),
+        ("처음 이용 가이드", "/column/first-guide/"),
+        ("장소별 방문 차이", "/column/place-compare/"),
+        ("생활권별 이용 차이", "/column/lifearea-guide/"),
+        ("건물 출입 체크", "/column/building-access/"),
+        ("건전한 방문 기준", "/column/safe-service/"),
+    ]),
     ("운영 기준", "/#policy", _policy_sub),
     ("노원구", "/nowon-gu/", []),
 ]

@@ -4,10 +4,12 @@
 from . import areas, stations, themes, info, magazine, about
 from .seoul import main as seoul_main
 from .seoul import pages as seoul_pages
+from .seoul import columns as seoul_columns
 
 PAGES = (
     [seoul_main.PAGE]
     + seoul_pages.PAGES
+    + seoul_columns.PAGES
     + areas.PAGES
     + stations.PAGES
     + themes.PAGES
