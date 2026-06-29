@@ -5,8 +5,8 @@
 2,000자 미만 행정동 페이지는 build.py 가 자동으로 noindex 처리한다(단계적 색인).
 """
 from . import render as R
-from .data import (AREAS, CHECKS, DISTRICTS, LIFE_AREAS, NOWON_URL, POLICIES,
-                   STATIONS, USE_CASES)
+from .data import (AREAS, CHECKS, DISTRICTS, DONG_NOTES, LIFE_AREAS, NOWON_URL,
+                   POLICIES, STATIONS, USE_CASES)
 
 _AREA_BY_SLUG = {a["slug"]: a for a in AREAS}
 
@@ -41,12 +41,12 @@ def _district_page(slug, d):
 
 <section>
 <h2>{name} 지역 개요</h2>
-<p>{name}는 {d['focus']} 생활권으로 이해하면 자신의 위치에 맞는 정보를 찾기 쉽습니다. 구 이름만으로 방문 환경을 판단하기는 어렵습니다. 같은 {name} 안에서도 업무지구와 주거지, 숙소 인접 지역의 이용 기준이 다르기 때문입니다. 이 페이지는 {name}를 생활권, 가까운 지하철역, 이용 장소 기준으로 나누어 예약 전에 확인할 내용을 정리했습니다. {area_name}의 전체 흐름은 <a href="{R.area_url(area['slug'])}">{area_name} 안내</a>에서 함께 볼 수 있습니다.</p>
+<p>{name}는 {d['focus']} 생활권으로 이해하면 자신의 위치에 맞는 정보를 찾기 쉽습니다. 같은 {name} 안에서도 업무지구와 주거지, 숙소 인접 지역의 이용 기준이 달라 구 이름만으로 방문 환경을 판단하기는 어렵습니다. 이 페이지는 {name}를 생활권, 가까운 지하철역, 이용 장소 기준으로 나누어 예약 전에 확인할 내용을 정리했습니다. {area_name}의 전체 흐름은 <a href="{R.area_url(area['slug'])}">{area_name} 안내</a>에서 함께 볼 수 있습니다.</p>
 </section>
 
 <section>
 <h2>대표 생활권</h2>
-<p>{name}의 대표 생활권은 {life_links}입니다. 생활권마다 주거·업무·숙소 비중이 달라 방문 시간대와 출입 방식, 확인할 내용이 조금씩 다릅니다. 자신이 머무는 위치가 어느 생활권에 가까운지 먼저 확인하면, 예약 전에 무엇을 준비해야 하는지 분명해집니다. 각 생활권 페이지에서 가까운 역과 이용 장소 기준을 더 자세히 확인할 수 있습니다.</p>
+<p>{name}의 대표 생활권은 {life_links}입니다. 생활권마다 주거·업무·숙소 비중이 달라 방문 시간대와 출입 방식, 확인할 내용이 조금씩 다릅니다. 자신이 머무는 위치가 어느 생활권에 가까운지 먼저 확인하면, 예약 전에 무엇을 준비해야 하는지 분명해집니다.</p>
 </section>
 
 <section>
@@ -262,16 +262,21 @@ def _dong_pages():
                 f'<a href="{R.dong_url(gu_slug, x)}">{x}</a>' for x in d["dongs"] if x != dong
             )
             body = f"""
-<p class="lead">{dong}은 {gu} 대표 행정동 안내입니다. {gu} 생활권 안에서 {dong} 인근의 방문 전 확인사항을 정리했습니다.</p>
+<p class="lead">{dong} 방문 예약 안내입니다. {DONG_NOTES.get(dong, gu + ' 생활권에 속한 동입니다.')}</p>
 
 <section>
 <h2>{dong} 위치와 상위 구</h2>
-<p>{dong}은 {gu}에 속한 동으로, <a href="{R.gu_url(gu_slug)}">{gu}</a> 생활권의 일부입니다. {d['note']} {dong} 인근도 같은 흐름 안에서 이해하면 방문 전에 확인할 내용을 정리하기 쉽습니다.</p>
+<p>{dong}은 {gu}에 속한 동으로, <a href="{R.gu_url(gu_slug)}">{gu}</a> 생활권의 일부입니다. {DONG_NOTES.get(dong, '')} {gu} 전체 흐름은 {d['note']} 이런 특성을 알면 {dong} 인근에서 방문 전에 무엇을 준비해야 하는지 정리하기 쉽습니다.</p>
 </section>
 
 <section>
 <h2>가까운 생활권과 지하철역</h2>
 <p>{dong}에서 가까운 생활권은 {life_link}이고, 가까운 주요 역은 {station_links}입니다. 정확한 방문 위치는 예약 시 도로명 주소와 동·호수로 확인합니다. {gu}의 다른 대표 행정동으로는 {other_dongs} 등이 있습니다.</p>
+</section>
+
+<section>
+<h2>{dong} 방문 환경</h2>
+<p>{DONG_NOTES.get(dong, '')} {dong}{R._CHAR_TEXT.get(d['area_type'], R._CHAR_TEXT['mixed'])}</p>
 </section>
 
 <section>

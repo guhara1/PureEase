@@ -53,6 +53,11 @@
   <url><loc>https://www.seoul-ganda.example.com/life/jongno-gwanghwamun/</loc></url>
   <url><loc>https://www.seoul-ganda.example.com/life/dongdaemun-cheongnyangni/</loc></url>
   <url><loc>https://www.seoul-ganda.example.com/life/chungmuro-euljiro/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/life/nonhyeon-sinsa/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/life/daechi-dogok/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/life/munjeong-garak/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/life/seokchon-bangi/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/life/gongdeok-mapo/</loc></url>
   <url><loc>https://www.seoul-ganda.example.com/station/gangnam-station/</loc></url>
   <url><loc>https://www.seoul-ganda.example.com/station/yeoksam-station/</loc></url>
   <url><loc>https://www.seoul-ganda.example.com/station/seolleung-station/</loc></url>
@@ -89,6 +94,124 @@
   <url><loc>https://www.seoul-ganda.example.com/station/gwanghwamun-station/</loc></url>
   <url><loc>https://www.seoul-ganda.example.com/station/myeongdong-station/</loc></url>
   <url><loc>https://www.seoul-ganda.example.com/station/euljiro-1ga-station/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangnam-gu/yeoksam-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangnam-gu/nonhyeon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangnam-gu/samseong-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangnam-gu/cheongdam-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangnam-gu/apgujeong-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangnam-gu/sinsa-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangnam-gu/daechi-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangnam-gu/dogok-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seocho-gu/seocho-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seocho-gu/banpo-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seocho-gu/bangbae-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seocho-gu/yangjae-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seocho-gu/jamwon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seocho-gu/umyeon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/songpa-gu/jamsil-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/songpa-gu/bangi-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/songpa-gu/seokchon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/songpa-gu/munjeong-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/songpa-gu/garak-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/songpa-gu/ogeum-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/songpa-gu/jangji-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangdong-gu/cheonho-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangdong-gu/seongnae-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangdong-gu/gil-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangdong-gu/dunchon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangdong-gu/godeok-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangdong-gu/sangil-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangdong-gu/amsa-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/seogyo-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/hapjeong-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/yeonnam-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/mangwon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/gongdeok-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/mapo-gu/sangam-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/changcheon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/daesin-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/hongje-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/namgajwa-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/bukahyeon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seodaemun-gu/chungjeongno/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/eunpyeong-gu/bulgwang-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/eunpyeong-gu/eungam-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/eunpyeong-gu/yeokchon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/eunpyeong-gu/jingwan-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/eunpyeong-gu/nokbeon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yeongdeungpo-gu/yeouido-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yeongdeungpo-gu/yeongdeungpo-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yeongdeungpo-gu/dangsan-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yeongdeungpo-gu/mullae-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yeongdeungpo-gu/singil-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/guro-gu/guro-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/guro-gu/sindorim-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/guro-gu/gaebong-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/guro-gu/gocheok-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/geumcheon-gu/gasan-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/geumcheon-gu/doksan-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/geumcheon-gu/siheung-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangseo-gu/magok-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangseo-gu/balsan-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangseo-gu/hwagok-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangseo-gu/deungchon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangseo-gu/gayang-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yangcheon-gu/mok-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yangcheon-gu/sinjeong-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yangcheon-gu/sinwol-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gwanak-gu/sillim-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gwanak-gu/bongcheon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gwanak-gu/namhyeon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dongjak-gu/sadang-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dongjak-gu/noryangjin-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dongjak-gu/heukseok-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dongjak-gu/sangdo-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongdong-gu/seongsu-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongdong-gu/haengdang-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongdong-gu/oksu-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongdong-gu/geumho-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gwangjin-gu/hwayang-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gwangjin-gu/jayang-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gwangjin-gu/guui-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gwangjin-gu/gunja-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dongdaemun-gu/jeonnong-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dongdaemun-gu/jangan-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dongdaemun-gu/hwigyeong-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dongdaemun-gu/imun-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dongdaemun-gu/jegi-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jungnang-gu/sangbong-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jungnang-gu/myeonmok-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jungnang-gu/mangu-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jungnang-gu/muk-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jungnang-gu/sinnae-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dobong-gu/chang-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dobong-gu/ssangmun-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dobong-gu/banghak-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/dobong-gu/dobong-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangbuk-gu/suyu-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangbuk-gu/mia-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangbuk-gu/beon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/gangbuk-gu/ui-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongbuk-gu/dongseon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongbuk-gu/donam-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongbuk-gu/jeongneung-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongbuk-gu/anam-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/seongbuk-gu/jangwi-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jongno-gu/jongno/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jongno-gu/hyehwa-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jongno-gu/pyeongchang-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jongno-gu/buam-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jongno-gu/sajik-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jung-gu/myeongdong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jung-gu/euljiro-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jung-gu/sindang-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jung-gu/hoehyeon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/jung-gu/jangchung-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yongsan-gu/hannam-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yongsan-gu/itaewon-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yongsan-gu/hangangno-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yongsan-gu/yongsan-dong/</loc></url>
+  <url><loc>https://www.seoul-ganda.example.com/yongsan-gu/galwol-dong/</loc></url>
   <url><loc>https://www.seoul-ganda.example.com/use/home/</loc></url>
   <url><loc>https://www.seoul-ganda.example.com/use/hotel/</loc></url>
   <url><loc>https://www.seoul-ganda.example.com/use/officetel/</loc></url>
