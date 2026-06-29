@@ -184,6 +184,7 @@ def _life_page(l):
 {R.faq_block(R.region_faqs(name))}
 {R.who_how_why()}
 {R.byline_block()}
+{R.related_block(name + ' 관련 지역 보기', [(g, R.gu_url(name2slug[g])) for g in l['districts'] if g in name2slug] + [(st + ' 역세권', R.station_url(R._STATION_BY_NAME[st]['slug'])) for st in l['stations'] if st in R._STATION_BY_NAME] + [('자택 이용', R.use_url('home')), ('호텔·숙소 이용', R.use_url('hotel'))])}
 {_cta()}
 """
     desc = _clip(f"{name} 출장마사지 생활권 안내입니다. 포함 지역과 가까운 역, 이용 장소별 예약 전 확인사항을 정리했습니다.")
@@ -233,6 +234,7 @@ def _station_page(s):
 {R.faq_block(R.region_faqs(name + ' 인근'))}
 {R.who_how_why()}
 {R.byline_block()}
+{R.related_block(name + ' 관련 지역 보기', ([(gu, R.gu_url(name2slug[gu]))] if gu in name2slug else []) + ([(s['life'] + ' 생활권', R.life_url(R._LIFE_BY_NAME[s['life']]['slug']))] if s['life'] in R._LIFE_BY_NAME else []) + [('역세권 이용', R.use_url('station-area')), ('호텔·숙소 이용', R.use_url('hotel'))])}
 {_cta()}
 """
     desc = _clip(f"{name} 출장마사지 역세권 안내입니다. 가까운 생활권과 이용 장소, 예약 전 확인사항을 정리했습니다.")
@@ -426,6 +428,50 @@ def _policy_pages():
     return out
 
 
+# ── 문의하기 ─────────────────────────────────────────────
+def _contact_page():
+    from ..site import PHONE, PHONE_DISPLAY, TELEGRAM_MAKE, TELEGRAM_PARTNER
+    body = f"""
+<p class="lead">서울 전역 방문 예약과 상담은 전화로 가장 빠르게 진행됩니다. 방문 위치(도로명 주소)와 희망 시간을 알려주시면 가능 여부를 바로 확인해 드립니다.</p>
+
+<section>
+<h2>예약·상담 문의</h2>
+<p>예약 문의는 연중무휴 24시간 받습니다. 정확한 방문 위치와 희망 시간, 이용 장소(자택·호텔·숙소·오피스텔)를 알려주시면 가능 여부와 준비 사항을 안내해 드립니다. 저녁 시간대와 주말은 문의가 몰릴 수 있어 여유 있게 연락 주시는 것이 좋습니다.</p>
+<p><a class="cta-phone" href="tel:{PHONE}">{PHONE_DISPLAY}</a></p>
+</section>
+
+<section>
+<h2>웹사이트 제작·제휴 문의</h2>
+<p>웹사이트 제작 문의와 제휴 문의는 텔레그램으로 받습니다. 아래 버튼으로 연결됩니다.</p>
+<p><a href="{TELEGRAM_MAKE}" target="_blank" rel="noopener nofollow">웹사이트 제작문의 ↗</a> · <a href="{TELEGRAM_PARTNER}" target="_blank" rel="noopener nofollow">제휴문의 ↗</a></p>
+</section>
+
+<section>
+<h2>문의 전 확인하면 좋은 내용</h2>
+<ul class="checklist">
+<li>방문 주소를 도로명 기준으로 확인했나요?</li>
+<li>건물 출입 방식(공동현관·엘리베이터·프런트)을 확인했나요?</li>
+<li>이용 장소가 자택·호텔·오피스텔 중 어디인가요?</li>
+<li>희망 시간대와 연락 가능 여부를 확인했나요?</li>
+</ul>
+<p>자세한 항목은 <a href="{R.check_url('address')}">방문 주소 확인</a>·<a href="{R.check_url('building-access')}">건물 출입 방식</a>·<a href="{R.check_url('time')}">예약 가능 시간</a>에서 확인할 수 있습니다.</p>
+</section>
+
+{R.privacy_block()}
+{R.illegal_block()}
+{R.who_how_why()}
+{R.byline_block()}
+"""
+    return {
+        "path": "contact/",
+        "title": "문의하기 | 서울 출장마사지 간다GO",
+        "desc": "서울 전역 방문 예약·상담과 웹사이트 제작·제휴 문의 안내입니다. 예약전화와 텔레그램으로 연결됩니다.",
+        "h1": "문의하기",
+        "body": body,
+        "breadcrumb": [("문의하기", "")],
+    }
+
+
 # ── 전체 PAGES 조립 ──────────────────────────────────────
 def build_pages():
     pages = []
@@ -445,6 +491,7 @@ def build_pages():
     pages += _use_pages()
     pages += _check_pages()
     pages += _policy_pages()
+    pages.append(_contact_page())
     return pages
 
 
