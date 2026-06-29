@@ -25,6 +25,8 @@ from content.site import (AUTHORITY_LINKS, BASE_URL, BRAND, COMPANY, NAV,
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 MIN_INDEX_CHARS = 2000
+# 모든 페이지에 공통으로 노출하는 대표 이미지(사용자가 교체). 메인은 히어로 옆에 표시.
+HERO_IMAGE = "/assets/hero.png"
 
 
 def text_length(body_html: str) -> int:
@@ -236,13 +238,15 @@ def render_page(page: dict) -> str:
         for label, url in AUTHORITY_LINKS
     )
 
-    # 대표 이미지(히어로가 없는 페이지에 한해 본문 상단에 노출)
+    # 대표 이미지 — 모든 페이지에 노출.
+    # 메인은 히어로 옆(hero-media)에서 출력하고, 나머지 페이지는 본문 상단에 노출한다.
+    # 표시 이미지는 사용자가 교체하는 /assets/hero.png 를 전 페이지 공통으로 사용한다.
     cover_html = ""
-    if page.get("image") and not hero:
+    if not hero:
         cover_html = (
             f'<figure class="page-cover">'
-            f'<img src="{page["image"]}" alt="{page.get("image_alt", BRAND)}" '
-            f'width="1200" height="630" loading="lazy" decoding="async">'
+            f'<img src="{HERO_IMAGE}" alt="{page.get("image_alt") or (BRAND + " 안내 이미지")}" '
+            f'loading="lazy" decoding="async">'
             f"</figure>"
         )
 

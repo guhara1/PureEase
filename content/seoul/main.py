@@ -45,19 +45,25 @@ def _use_cards():
 
 _HERO = f"""<section class="hero">
   <div class="hero-inner">
-    <p class="hero-badge">서울 생활권 편집지도 · 25개 구 안내</p>
-    <h1>서울 출장마사지<br>생활권별 방문 가능 지역 안내</h1>
-    <p class="hero-lead">강남, 잠실, 홍대, 여의도, 성수, 용산, 목동, 마곡 등 서울 주요 생활권과<br>자택·호텔·오피스텔 이용 전 확인사항을 안내합니다.</p>
-    <div class="hero-actions">
-      <a class="hero-btn primary" href="tel:{PHONE}">📞 {PHONE_DISPLAY}</a>
-      <a class="hero-btn" href="#areas">권역 안내 보기</a>
+    <div class="hero-text">
+      <p class="hero-badge">서울 생활권 편집지도 · 25개 구 안내</p>
+      <h1>서울 출장마사지<br>생활권별 방문 가능 지역 안내</h1>
+      <p class="hero-lead">강남, 잠실, 홍대, 여의도, 성수, 용산, 목동, 마곡 등 서울 주요 생활권과<br>자택·호텔·오피스텔 이용 전 확인사항을 안내합니다.</p>
+      <div class="hero-actions">
+        <a class="hero-btn primary" href="tel:{PHONE}">📞 {PHONE_DISPLAY}</a>
+        <a class="hero-btn" href="#areas">권역 안내 보기</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>9개</strong><span>생활권 권역</span></li>
+        <li><strong>25개</strong><span>자치구 안내</span></li>
+        <li><strong>20+</strong><span>핵심 생활권</span></li>
+        <li><strong>37개</strong><span>역세권 안내</span></li>
+      </ul>
     </div>
-    <ul class="hero-stats">
-      <li><strong>9개</strong><span>생활권 권역</span></li>
-      <li><strong>25개</strong><span>자치구 안내</span></li>
-      <li><strong>20+</strong><span>핵심 생활권</span></li>
-      <li><strong>37개</strong><span>역세권 안내</span></li>
-    </ul>
+    <div class="hero-media">
+      <img class="hero-image" src="/assets/hero.png" alt="서울 전역 생활권 방문 관리 안내 이미지"
+           loading="eager" decoding="async" fetchpriority="high">
+    </div>
   </div>
 </section>
 """
