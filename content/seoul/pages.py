@@ -6,7 +6,7 @@
 """
 from . import render as R
 from .data import (AREAS, CHECKS, DISTRICTS, DONG_NOTES, LIFE_AREAS, NOWON_URL,
-                   POLICIES, STATIONS, USE_CASES)
+                   POLICIES, STATIONS, USE_CASES, note_for)
 
 _AREA_BY_SLUG = {a["slug"]: a for a in AREAS}
 
@@ -258,17 +258,18 @@ def _dong_pages():
         life0 = d["life_areas"][0]
         st = d["stations"][:2]
         for dong in d["dongs"]:
+            note = note_for(gu_slug, dong)
             station_links = R._join_links(R._station_link, st)
             life_link = R._life_link(life0)
             other_dongs = ", ".join(
                 f'<a href="{R.dong_url(gu_slug, x)}">{x}</a>' for x in d["dongs"] if x != dong
             )
             body = f"""
-<p class="lead">{dong} 방문 예약 안내입니다. {DONG_NOTES.get(dong, gu + ' 생활권에 속한 동입니다.')}</p>
+<p class="lead">{dong} 방문 예약 안내입니다. {note or (gu + ' 생활권에 속한 동입니다.')}</p>
 
 <section>
 <h2>{dong} 위치와 상위 구</h2>
-<p>{dong}은 {gu}에 속한 동으로, <a href="{R.gu_url(gu_slug)}">{gu}</a> 생활권의 일부입니다. {DONG_NOTES.get(dong, '')} {gu} 전체 흐름은 {d['note']} 이런 특성을 알면 {dong} 인근에서 방문 전에 무엇을 준비해야 하는지 정리하기 쉽습니다.</p>
+<p>{dong}은 {gu}에 속한 동으로, <a href="{R.gu_url(gu_slug)}">{gu}</a> 생활권의 일부입니다. {note} {gu} 전체 흐름은 {d['note']} 이런 특성을 알면 {dong} 인근에서 방문 전에 무엇을 준비해야 하는지 정리하기 쉽습니다.</p>
 </section>
 
 <section>
@@ -278,7 +279,7 @@ def _dong_pages():
 
 <section>
 <h2>{dong} 방문 환경</h2>
-<p>{DONG_NOTES.get(dong, '')} {dong}{R._CHAR_TEXT.get(d['area_type'], R._CHAR_TEXT['mixed'])}</p>
+<p>{note} {dong}{R._CHAR_TEXT.get(d['area_type'], R._CHAR_TEXT['mixed'])}</p>
 </section>
 
 <section>
@@ -304,9 +305,9 @@ def _dong_pages():
                 "body": body,
                 "extra_head": R.faq_jsonld(R.region_faqs(dong)),
                 "breadcrumb": [(gu, R.gu_url(gu_slug)), (dong, "")],
-                # 고유 설명(DONG_NOTES)이 있는 동만 색인. 나머지는 생성·링크만 하고
-                # 중복 본문 위험을 피하기 위해 noindex(단계적 색인, 지시서 23항).
-                "noindex": dong not in DONG_NOTES,
+                # 고유 설명이 있는 동만 색인(현재 전 동 보유). 본문 2,000자 미만은
+                # build.py 가 자동 noindex(지시서 23항 단계적 색인).
+                "noindex": not note,
             })
     return pages
 
